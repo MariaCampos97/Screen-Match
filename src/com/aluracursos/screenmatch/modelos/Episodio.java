@@ -41,4 +41,13 @@ public class Episodio implements Clasificacion {
             return  2;
         }
     }
+
+
+    public void setTotalVisualizaciones(int totalVisualizaciones) {
+        this.totalVisualizaciones = totalVisualizaciones;
+    }
+
+    public int getTotalVisualizaciones() {
+        return totalVisualizaciones;
+    }
 }
