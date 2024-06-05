@@ -1,3 +1,5 @@
+package principal;
+
 import com.aluracursos.screenmatch.calculos.CalculadoraDeTiempo;
 import com.aluracursos.screenmatch.calculos.FiltroRecomendacion;
 import com.aluracursos.screenmatch.modelos.Episodio;
@@ -9,9 +11,7 @@ import java.util.ArrayList;
 public class Principal {
 
     public static void main(String[] args) {
-        Pelicula miPelicula = new Pelicula();
-        miPelicula.setNombre("Encanto");
-        miPelicula.setFechaDeLanzamiento(2021);
+        Pelicula miPelicula = new Pelicula("Encanto", 2021);
         miPelicula.setDuracionEnMinutos(120);
         miPelicula.setIncluidoEnELPlan(true);
 
@@ -21,14 +21,10 @@ public class Principal {
         System.out.println(miPelicula.getTotalDeLasEvaluaciones());
         System.out.println(miPelicula.calculaMedia());
 
-        Pelicula otraPelicula = new Pelicula();
-        otraPelicula.setNombre("Matrix");
-        otraPelicula.setFechaDeLanzamiento(1998);
+        Pelicula otraPelicula = new Pelicula("Matrix", 1998);
         otraPelicula.setDuracionEnMinutos(180);
 
-        Serie casaDragon = new Serie();
-        casaDragon.setNombre("La casa del dragón");
-        casaDragon.setFechaDeLanzamiento(2022);
+        Serie casaDragon = new Serie("La casa del dragón", 2022);
         casaDragon.setTemporadas(1);
         casaDragon.setMinutosPorEpisodio(50);
         casaDragon.setEpisodiosPorTemporada(10);
@@ -52,10 +48,9 @@ public class Principal {
 
         filtroRecomendacion.filtra(episodio);
 
-        var peliculaDeBruno = new Pelicula();
-        peliculaDeBruno.setNombre("El señor de los añillos");
+        var peliculaDeBruno = new Pelicula("El señor de los añillos",2001);
         peliculaDeBruno.setDuracionEnMinutos(180);
-        peliculaDeBruno.setFechaDeLanzamiento(2001);
+
 
         ArrayList<Pelicula> listaDePeliculas = new ArrayList<>();
         listaDePeliculas.add(peliculaDeBruno);
@@ -66,6 +61,8 @@ public class Principal {
         System.out.println("La primera pelicula es:" + listaDePeliculas.get(0).getNombre());
 
         System.out.println(listaDePeliculas);
+
+
   }
 }
 
