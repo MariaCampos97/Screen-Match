@@ -41,4 +41,9 @@ public class Serie extends Titulo {
     public void setEpisodiosPorTemporada(int episodiosPorTemporada) {
         this.episodiosPorTemporada = episodiosPorTemporada;
     }
+
+    @Override
+    public String toString() {
+        return "Serie: "+this.getNombre()+" ("+this.getFechaDeLanzamiento()+")";
+    }
 }
