@@ -1,9 +1,9 @@
-package com.aluracursos.screenmatch.excepción;
+package com.alura.screenmatch.excepcion;
 
-public class ErrorEnConversionDeDuracionExcepcion extends Throwable {
+public class ErrorEnConversionDeDuracionException extends RuntimeException {
     private String mensaje;
 
-    public ErrorEnConversionDeDuracionExcepcion(String mensaje) {
+    public ErrorEnConversionDeDuracionException(String mensaje) {
         this.mensaje = mensaje;
     }
 

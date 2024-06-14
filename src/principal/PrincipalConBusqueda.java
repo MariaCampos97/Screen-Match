@@ -1,4 +1,4 @@
-package com.alura.screenmatch.principal;
+package principal;
 
 import com.alura.screenmatch.excepcion.ErrorEnConversionDeDuracionException;
 import com.alura.screenmatch.modelos.Titulo;
@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class PrincipalConBusqueda {
-    public static <Titulo, ErrorEnConversionDeDuracionException> void main(String[] args) throws IOException, InterruptedException {
+    public static void main(String[] args) throws IOException, InterruptedException {
         Scanner lectura = new Scanner(System.in);
         List<Titulo> titulos = new ArrayList<>();
         Gson gson = new GsonBuilder()
